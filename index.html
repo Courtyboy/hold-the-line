@@ -93,7 +93,7 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 <link rel="manifest" href="index.manifest.json">
-
+<script>(function(){var a=window.alert;window.alert=function(m){if(String(m).indexOf('WebGL context lost')<0)return a.apply(window,arguments);var k='htlReload',t=0;try{t=+sessionStorage.getItem(k)||0}catch(e){}if(Date.now()-t<20000)return a.apply(window,arguments);var go=function(){try{sessionStorage.setItem(k,Date.now())}catch(e){}location.reload()};if(document.hidden)document.addEventListener('visibilitychange',function(){if(!document.hidden)go()});else go();};})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
