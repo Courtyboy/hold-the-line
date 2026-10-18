@@ -93,7 +93,7 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 <link rel="manifest" href="index.manifest.json">
-<script>(function(){var a=window.alert;window.alert=function(m){if(String(m).indexOf('WebGL context lost')<0)return a.apply(window,arguments);var k='htlReload',t=0;try{t=+sessionStorage.getItem(k)||0}catch(e){}if(Date.now()-t<20000)return a.apply(window,arguments);var go=function(){try{sessionStorage.setItem(k,Date.now())}catch(e){}location.reload()};if(document.hidden)document.addEventListener('visibilitychange',function(){if(!document.hidden)go()});else go();};})();</script>
+<script>(function(){var a=window.alert;window.alert=function(m){if(String(m).indexOf('WebGL context lost')<0)return a.apply(window,arguments);var k='htlReload',t=0;try{t=+sessionStorage.getItem(k)||0}catch(e){}if(Date.now()-t<20000)return a.apply(window,arguments);var go=function(){try{sessionStorage.setItem(k,Date.now())}catch(e){}location.reload()};if(document.hidden)document.addEventListener('visibilitychange',function(){if(!document.hidden)go()});else go();};})();</script><script>(function(){var A=window.AudioContext||window.webkitAudioContext;if(!A)return;var all=[];var W=function(o){var c=o===undefined?new A():new A(o);all.push(c);return c;};W.prototype=A.prototype;window.AudioContext=W;window.webkitAudioContext=W;var set=function(off){for(var i=0;i<all.length;i++){try{off?all[i].suspend():all[i].resume();}catch(e){}}};document.addEventListener('visibilitychange',function(){set(document.hidden);});window.addEventListener('pagehide',function(){set(true);});window.addEventListener('pageshow',function(){if(!document.hidden)set(false);});})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -112,7 +112,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":9370868,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":9370964,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
